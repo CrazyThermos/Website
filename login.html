@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script rel="stylesheet" href="http://use.fontawesome.com/e95e732c0e.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="show-login-btn">
+    <i class="fa fa-sign-in-alt" >Show Login Form</i>
+</div>
+  <div class="login-box">
+    <div class="hide-login-btn">
+        <i class="fa fa-times"></i>
+    </div>
+    <form class="login-form" action="index.html" method="post">
+        <h1>Welcome</h1>
+        <input class="txtb" type="text" name="" placeholder="Username">
+        <input class="txtb" type="password" name="" placeholder="Password">
+        <input class="login-btn" type="submit" name="" value="Login">
+    </form>
+  </div>
+<script type="text/javascript">
+    $(".show-login-btn").on("click",function(){
+        $(".login-box").toggleClass("showed");
+    })
+    $(".hide-login-btn").on("click",function(){
+        $(".login-box").toggleClass("showed");
+    })
+</script>
+</body>
+</html>
